@@ -1,0 +1,133 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3896246344" file="C:\Users\mkiria01\Dropbox\Software\Github\EPANET-GIS\inp2gis.prj" location="C:\Users\mkiria01\Dropbox\Software\Github\EPANET-GIS" name="inp2gis" preferred-package-location="C:\Users\mkiria01\Dropbox\Software\Github\EPANET-GIS\inp2gis\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>inp2gis</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Marios Kyriakou</param.authnamewatermark>
+    <param.email>mariosmsk@gmail.com</param.email>
+    <param.company>KIOS Research Center</param.company>
+    <param.summary>Export EPANET Input File to GIS files (*.shp, *.dbf)</param.summary>
+    <param.description>Shapefiles : junctions, reservoirs, tanks, pipes, pumps, valves
+DBFfiles : DEMANDS,STATUS,PATTERNS,CURVES,CONTROLS,RULES,ENERGY
+EMITTERS,QUALITY,SOURCES,REACTIONS,OPTREACTIONS,MIXING
+TIMES,REPORT,OPTIONS</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\KIOS Research Center\inp2gis\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\inp2gis\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\inp2gis\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\inp2gis\for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\inp2gis.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\EPANET-Matlab-Toolkit\epanet.m</file>
+      <file>${PROJECT_ROOT}\misc\inp2gis_main.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\inp2gis.fig</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\inp2gis\for_testing" name="inp2gis.exe" optional="false">C:\Users\mkiria01\Dropbox\Software\Github\EPANET-GIS\inp2gis\for_testing\inp2gis.exe</file>
+      <file location="${PROJECT_ROOT}\inp2gis\for_testing" name="splash.png" optional="false">C:\Users\mkiria01\Dropbox\Software\Github\EPANET-GIS\inp2gis\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\inp2gis\for_testing" name="readme.txt" optional="true">C:\Users\mkiria01\Dropbox\Software\Github\EPANET-GIS\inp2gis\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files (x86)\MATLAB\R2015b</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>true</os32>
+      <os64>false</os64>
+      <arch>win32</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
