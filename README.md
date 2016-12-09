@@ -1,7 +1,12 @@
 EPANET-GIS
 ==========
+Shapefiles: junctions, pipes, reservoirs, tanks, pumps, valves
 
-Export EPANET input files to *.shp and *.dbf (sections) GIS files.
+DBFfiles: DEMANDS, STATUS, PATTERNS, CURVES, CONTROLS, RULES, ENERGY, EMITTERS, QUALITY, SOURCES, REACTIONS, OPTREACTIONS, MIXING, TIMES, REPORT, OPTIONS
+
+=================
+
+Export EPANET input files to GIS files (*.shp and *.dbf -sections).
 
 inp2gis.exe
 
@@ -9,7 +14,7 @@ inp2gis.exe
 2. inp2gis_main.m 
 3. epanet.m
 
-Export GIS files to *.inp EPANET Input file.
+Export GIS files to EPANET Input file (*.inp).
 
 gis2inp.exe
 
