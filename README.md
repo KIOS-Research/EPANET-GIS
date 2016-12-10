@@ -23,8 +23,8 @@ gis2inp.exe
 3. dbfread.m
 
 
-Requirements
-============
+Requirements for executables
+============================
 
 MATLAB Compiler
 
