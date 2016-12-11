@@ -22,6 +22,7 @@ gis2inp.exe
 2. gis2inp_main.m 
 3. dbfread.m
 
+https://www.youtube.com/watch?v=_seit2Plwkc
 
 Requirements for executables
 ============================
